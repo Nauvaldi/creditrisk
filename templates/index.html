@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <title>Credit Risk</title>
+{% endblock %}
+
+{% block body %}
+<div class="limiter">
+    <div class="container-login100">
+        <div class="wrap-login100 p-1-110 p-r-110 p-t-62 p-b-33">
+            <form class="login100-form validate-form flex-sb flex-w" action="/" method="POST">
+                <span class="login100-form-title mb-3 p-l-100">
+                    Credit Risk Pinjaman Bank
+                </span>
+                <div class="container p-l-100 mt-3">
+                    <span class="txt1">Pendapatan setahun</span>
+                <div class="wrap-input100 validate-input">
+                    <input class="input100" type="text" placeholder="Masukan banyak pendapatan (0-1)" name="pendapatan" id="pendapatan" required>
+                    <span class="focus-input100"></span>
+                </div>
+                </div>
+                <div class="container p-l-100 mt-3">
+                    <span class="txt1">KPR Aktif (Ya)</span>
+                <div class="wrap-input100 validate-input">
+                    <input class="input100" type="text" placeholder="Ya (0/1)" name="kprya" id="kprya" required>
+                    <span class="focus-input100"></span>
+                </div>
+                </div>
+
+                <div class="container p-l-100 mt-3">
+                    <span class="txt1">KPR Aktif (Tidak)</span>
+                <div class="wrap-input100 validate-input">
+                    <input class="input100" type="text" placeholder="Tidak (0/1)" name="kprtidak" id="kprtidak" required>
+                    <span class="focus-input100"></span>
+                </div>
+                </div>
+
+                <div class="container p-l-100 mt-3">
+                    <span class="txt1">Durasi Pinjaman</span>
+                <div class="wrap-input100 validate-input">
+                    <input class="input100" type="text" placeholder="Masukan durasi pinjaman (0-1)" name="pinjaman" id="pinjaman" required>
+                    <span class="focus-input100"></span>
+                </div>
+                </div>
+
+                <div class="container p-l-100 mt-3">
+                    <span class="txt1">Jumlah Tanggungan</span>
+                <div class="wrap-input100 validate-input">
+                    <input class="input100" type="text" placeholder="Masukan jumlah tanggungan (0-1)" name="tanggungan" id="tanggungan" required>
+                    <span class="focus-input100"></span>
+                </div>
+                </div>
+
+                <div class="container p-l-100 mt-3">
+                    <span class="txt1">Rata-Rata Overdue (0-30)</span>
+                <div class="wrap-input100 validate-input">
+                    <input class="input100" type="text" placeholder="Pilih 0/1" name="overdue1" id="overdue1" required>
+                    <span class="focus-input100"></span>
+                </div>
+                </div>
+
+                <div class="container p-l-100 mt-3">
+                    <span class="txt1">Rata-Rata Overdue (31-45)</span>
+                <div class="wrap-input100 validate-input">
+                    <input class="input100" type="text" placeholder="Pilih 0/1" name="overdue2" id="overdue2" required>
+                    <span class="focus-input100"></span>
+                </div>
+                </div>
+
+                <div class="container p-l-100 mt-3">
+                    <span class="txt1">Rata-Rata Overdue (46-60)</span>
+                <div class="wrap-input100 validate-input">
+                    <input class="input100" type="text" placeholder="Pilih 0/1" name="overdue3" id="overdue3" required>
+                    <span class="focus-input100"></span>
+                </div>
+                </div>
+
+                <div class="container p-l-100 mt-3">
+                    <span class="txt1">Rata-Rata Overdue (61-90)</span>
+                <div class="wrap-input100 validate-input">
+                    <input class="input100" type="text" placeholder="Pilih 0/1" name="overdue4" id="overdue4" required>
+                    <span class="focus-input100"></span>
+                </div>
+                </div>
+
+                <div class="container p-l-100 mt-3">
+                    <span class="txt1">Rata-Rata Overdue (>90)</span>
+                <div class="wrap-input100 validate-input">
+                    <input class="input100" type="text" placeholder="Pilih 0/1" name="overdue5" id="overdue5" required>
+                    <span class="focus-input100"></span>
+                </div>
+                </div>
+
+                <div class="container p-l-100 mt-3">
+                <div class="container-login100-form-btn">
+                        <button class="login100-form-btn">
+                            Prediksi
+                        </button>
+                </div>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+</div>
+{% endblock %}
